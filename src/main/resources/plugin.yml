@@ -1,0 +1,17 @@
+name: TotemBalance
+version: '${version}'
+
+main: org.example1.totemBalance.TotemBalance
+api-version: '26.3'
+load: POSTWORLD
+
+commands:
+  totembalance:
+    description: Перезагрузка конфига TotemBalance
+    usage: /totembalance reload
+    permission: totembalance.admin
+
+permissions:
+  totembalance.admin:
+    description: Позволяет перезагружать TotemBalance
+    default: op
